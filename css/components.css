@@ -1,0 +1,46 @@
+/* Heading */
+
+.main-heading {
+    text-align: center;
+}
+
+.main-heading h2 {
+    font-weight: normal;
+    font-size: 40px;
+    position: relative;
+    margin-bottom: 70px;
+    text-transform: uppercase;
+}
+
+.main-heading h2::before {
+    content: "";
+    position: absolute;
+    background: #333;
+    left: 50%;
+    bottom: -30px;
+    transform: translateX(-50%);
+    width: 120px;
+    height: 2px;
+}
+
+.main-heading h2::after {
+    content: "";
+    position: absolute;
+    background: white;
+    height: 15px;
+    width: 15px;
+    border: 2px solid #333;
+    border-radius: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -38px;
+}
+
+.main-heading p {
+    max-width: 100%;
+    width: 550px;
+    text-align: center;
+    line-height: 1.8;
+    color: #777;
+    margin: 0 auto 100px;
+}
