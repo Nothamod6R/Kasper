@@ -1001,6 +1001,7 @@ header nav .form i {
 .contact .container .contact-context{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .contact form input {
@@ -1049,6 +1050,16 @@ header nav .form i {
 .contact .info address {
     line-height: 1.8;
     color: #777;
+}
+
+@media (max-width: 768px) {
+    .contact .container .contact-context {
+        flex-direction: column;
+    }
+
+    .contact form textarea {
+        width: 100%;
+    }
 }
 
 /* Footer */
